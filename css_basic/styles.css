@@ -1,7 +1,7 @@
 body {
 	display: flex;
 	flex-direction: column;
-	background-color: blue;
+	background-color: #87CEEB;
 }
 
 main {
@@ -36,4 +36,16 @@ tr {
 td, th {
 	border: 1px solid black;
 	border-collapse: collapse;
+}
+
+ul {
+	font-style: italic;
+}
+
+footer {
+	font-style: italic;
+}
+.logo {
+	float: left;
+	margin-right: 20px;
 }
