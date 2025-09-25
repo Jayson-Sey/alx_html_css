@@ -1,6 +1,7 @@
 body {
 	display: flex;
 	flex-direction: column;
+	background-color: blue;
 }
 
 main {
@@ -18,4 +19,21 @@ article {
 aside {
 	flex: 1;
 	overflow-y: auto;
+}
+a {
+	color: red;
+}
+
+
+table {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+tr {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+td, th {
+	border: 1px solid black;
+	border-collapse: collapse;
 }
