@@ -1,0 +1,439 @@
+/* CSS Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav img {
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #C271FF;
+}
+
+/* Main Content */
+main {
+    margin-top: 80px; /* Account for fixed header */
+}
+
+/* Hero Section */
+main > section:first-child {
+    background: linear-gradient(to right, #C271FF, #8A2BE2);
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+main > section:first-child h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+main > section:first-child span {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
+main > section:first-child button {
+    background-color: #C271FF;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+main > section:first-child button:hover {
+    background-color: #A55AEB;
+}
+
+/* Learn from Pros Section */
+main > section:nth-child(2) {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: white;
+}
+
+main > section:nth-child(2) h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+main > section:nth-child(2) > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main > section:nth-child(2) > div > div {
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+main > section:nth-child(2) img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+main > section:nth-child(2) h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+main > section:nth-child(2) p {
+    color: #C271FF;
+    font-style: italic;
+}
+
+/* Testimonial Section */
+main > section:nth-child(3) {
+    background-color: #C271FF;
+    color: white;
+    padding: 4rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+main > section:nth-child(3) img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main > section:nth-child(3) blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    max-width: 600px;
+}
+
+main > section:nth-child(3) h3 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+main > section:nth-child(3) p {
+    font-style: italic;
+}
+
+/* Tutorials Section */
+main > section:nth-child(4) {
+    padding: 4rem 1rem;
+    background-color: white;
+    text-align: center;
+}
+
+main > section:nth-child(4) h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+main > section:nth-child(4) > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main > section:nth-child(4) > div > div {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+main > section:nth-child(4) > div > div > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+main > section:nth-child(4) h3 {
+    padding: 1rem 1rem 0.5rem;
+    color: #333;
+}
+
+main > section:nth-child(4) > div > div > p {
+    padding: 0 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+main > section:nth-child(4) > div > div > div {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+main > section:nth-child(4) > div > div > div img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+main > section:nth-child(4) > div > div > div h4 {
+    color: #C271FF;
+    font-size: 0.9rem;
+}
+
+main > section:nth-child(4) > div > div > div:nth-child(5) {
+    display: flex;
+    color: #C271FF;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+main > section:nth-child(4) > div > div > p:last-child {
+    padding: 0 1rem 1rem;
+    color: #C271FF;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Membership Section */
+main > section:nth-child(5) {
+    background-color: #071629;
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+main > section:nth-child(5) h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+main > section:nth-child(5) > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+}
+
+main > section:nth-child(5) > div > div {
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+main > section:nth-child(5) img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+main > section:nth-child(5) h3 {
+    margin-bottom: 1rem;
+}
+
+main > section:nth-child(5) p {
+    color: #ccc;
+}
+
+main > section:nth-child(5) button {
+    background-color: #C271FF;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+main > section:nth-child(5) button:hover {
+    background-color: #A55AEB;
+}
+
+/* FAQ Section */
+main > section:nth-child(6) {
+    padding: 4rem 1rem;
+    background-color: white;
+    text-align: center;
+}
+
+main > section:nth-child(6) h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+main > section:nth-child(6) > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main > section:nth-child(6) > div > div {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    text-align: left;
+}
+
+main > section:nth-child(6) h3 {
+    background-color: #C271FF;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+main > section:nth-child(6) h3:hover {
+    background-color: #A55AEB;
+}
+
+main > section:nth-child(6) > div > div > div:nth-child(even) {
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #071629;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+footer > section > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 1rem;
+    padding: 0 1rem;
+}
+
+footer img {
+    height: 40px;
+}
+
+footer i {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color: white;
+    transition: color 0.3s;
+}
+
+footer i:hover {
+    color: #C271FF;
+}
+
+footer p {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    nav ul {
+        margin-top: 1rem;
+    }
+    
+    nav ul li {
+        margin: 0 0.5rem;
+    }
+    
+    main > section:first-child h1 {
+        font-size: 2rem;
+    }
+    
+    main > section:first-child span {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    
+    footer > section > div {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    footer i {
+        margin: 0 0.5rem;
+    }
+}
